@@ -1,0 +1,7 @@
+<h2>Topics</h2>
+
+<ul class="collection">
+    <%= for %Discuss.Topic{title: title} <- @topics do %>
+      <li class="collection-item"><%= title %></li>
+    <% end %>
+<ul>
