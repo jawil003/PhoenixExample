@@ -18,6 +18,9 @@ defmodule DiscussWeb.Router do
 
     get "/", TopicController, :index
     resources("/topics", TopicController)
+  end
+
+  scope "/auth", DiscussWeb do
     get "/:provider", AuthController, :request
     get "/:provider/callback", AuthController, :callback
   end

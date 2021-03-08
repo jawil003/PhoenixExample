@@ -19,9 +19,8 @@ defmodule Discuss.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      applications: [:ueberauth_github],
       mod: {Discuss.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :ueberauth, :ueberauth_github]
     ]
   end
 
