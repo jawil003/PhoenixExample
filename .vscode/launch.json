@@ -11,7 +11,7 @@
             "name": "start phienix",
             "request": "launch",
             "projectDir": "${workspaceRoot}",
-            "task": "phx.server"
+            "task": "phx.server",
         }
     ]
 }
