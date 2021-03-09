@@ -16,7 +16,9 @@ config :discuss, Discuss.Repo,
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :discuss, DiscussWeb.Endpoint,
-  http: [port: 4000],
+  http: [
+    port: 4000
+  ],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -74,3 +76,5 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
+
+import_config "dev.secret.exs"

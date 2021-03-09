@@ -36,3 +36,5 @@ npm-debug.log
 #Env Files
 .env
 .env.development
+
+config/*.secret.exs
